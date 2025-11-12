@@ -1,5 +1,171 @@
 # Oncall-Adrenaline-Converter
 
+> Turns pager anxiety into incident retrospectives
+
+## Overview
+
+The Oncall-Adrenaline-Converter is a blockchain-based system built on the Stacks blockchain using Clarity smart contracts. This project transforms the chaotic experience of on-call engineering into structured, actionable retrospectives and predictive analytics.
+
+## Purpose
+
+When engineers are on-call, they face constant uncertainty about system health and potential incidents. This project provides two core capabilities:
+
+1. **Post-Incident Documentation**: Automatically structure and store incident postmortems with key learnings
+2. **Predictive Alerting**: Track and predict system behavior patterns to reduce surprise incidents
+
+## Smart Contracts
+
+### postmortem-lorem-ipsum
+
+Pre-fills 'we'll improve monitoring' sections - A contract for managing incident retrospectives and postmortem documentation. It provides structured storage for incident details, root causes, and action items, ensuring teams capture critical learnings from production incidents.
+
+**Key Features:**
+- Store incident reports with timestamps and severity levels
+- Track action items and improvement suggestions
+- Maintain historical record of incidents for pattern analysis
+- Immutable audit trail of system failures and responses
+
+### 3am-metric-psychic
+
+Predicts which graph drops right before you sleep - A contract for tracking system metrics and predicting anomalies before they trigger alerts. It helps on-call engineers stay ahead of incidents by identifying patterns in historical data.
+
+**Key Features:**
+- Record system metrics and thresholds
+- Track anomaly patterns and alert triggers
+- Predict potential issues based on historical trends
+- Provide early warning signals for degrading systems
+
+## Architecture
+
+This project uses Clarity smart contracts deployed on the Stacks blockchain, ensuring:
+- **Immutability**: Incident records cannot be altered or deleted
+- **Transparency**: All stakeholders can verify system behavior history
+- **Decentralization**: No single point of failure for critical incident data
+- **Auditability**: Complete history of system health and incidents
+
+## Technology Stack
+
+- **Language**: Clarity (Smart Contract Language)
+- **Blockchain**: Stacks
+- **Development Framework**: Clarinet
+- **Testing**: Clarinet Test Suite
+
+## Getting Started
+
+### Prerequisites
+
+- [Clarinet](https://github.com/hirosystems/clarinet) installed
+- Node.js and npm (for package dependencies)
+- Git
+
+### Installation
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd Oncall-Adrenaline-Converter
+
+# Install dependencies
+npm install
+
+# Check contract syntax
+clarinet check
+
+# Run tests
+clarinet test
+```
+
+### Development
+
+```bash
+# Create a new contract
+clarinet contract new <contract-name>
+
+# Check all contracts
+clarinet check
+
+# Run interactive console
+clarinet console
+```
+
+## Project Structure
+
+```
+Oncall-Adrenaline-Converter/
+├── contracts/          # Clarity smart contracts
+├── tests/             # Contract test files
+├── settings/          # Network configuration
+├── Clarinet.toml      # Project configuration
+├── package.json       # Node dependencies
+└── README.md          # This file
+```
+
+## Contract Interaction
+
+### Deploying Contracts
+
+```bash
+# Deploy to devnet
+clarinet integrate
+
+# Deploy to testnet
+clarinet deploy --testnet
+```
+
+### Testing
+
+```bash
+# Run all tests
+clarinet test
+
+# Run specific test file
+clarinet test tests/<test-file>.ts
+```
+
+## Use Cases
+
+1. **Incident Management Teams**: Store and analyze postmortem data across multiple incidents
+2. **Site Reliability Engineers**: Track system patterns to prevent recurring issues
+3. **Engineering Leadership**: Review historical incident trends for team planning
+4. **Compliance Teams**: Maintain immutable records of system incidents for audits
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## Security Considerations
+
+- All contract functions include proper access controls
+- Input validation prevents malformed data
+- Read-only functions marked appropriately
+- No external contract dependencies to minimize attack surface
+
+## Future Enhancements
+
+- Integration with popular monitoring tools (Datadog, New Relic, PagerDuty)
+- Machine learning models for incident prediction
+- Automated root cause analysis suggestions
+- Team rotation scheduling with blockchain verification
+- On-call compensation tracking
+
+## License
+
+MIT License - see LICENSE file for details
+
+## Support
+
+For issues, questions, or contributions, please open an issue in the GitHub repository.
+
+## Acknowledgments
+
+Built for on-call engineers who deserve better tools to manage the chaos of production systems.
+
+# Oncall-Adrenaline-Converter
+
 **Turns pager anxiety into incident retrospectives**
 
 ## Overview
